@@ -6,14 +6,26 @@
     <title>Recipe Website</title>
 </head>
 <body>
-    
-
+    <!--
+    Name: Amanda
+    Course: Web Development 10S
+    Teacher: Mr. Hardman
+    School: Pembina Trails Collegiate (PTC)
+    Date Last Modified: 17/10/2025
+    -->
     <header>
-        <h1>Easy Breakfast Recipes</h1>
+        <h1>Welcome To Some Easy Breakfast Recipes!!!</h1>
 				<a href="pancakes.html"><h2>Pancakes</h2></a> 
                 <a href="biscuits.html"><h2>Biscuits</h2></a>
                 <a href="french toast.html"><h2>French Toast</h2></a>
+
+        <h2>If you wanted you could also try this:</h2>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/fGsewb8QX8M?si=y6bb5PbN4Kmy23q7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>I hoped you liked these recipes, for suggestions you could send a message!!!</h3>
     </header>
+
+    <!--The footer shows everything that goes at the bottom
+    of your webpage.-->
 
     <footer>
         <form id="contact-us-form">
@@ -23,23 +35,35 @@
                 <input type="text" id="name" name="name" required><br><br>
 
                 <label for="phone-num">Phone Number (Ex. 1-844-453-1234):</label>
-                <input type="tel" id="phone-num" name="phone-num" required/>
+                <input type="tel" id="phone-num" name="phone-num" required>
 
                 <label for="email-addr">Email (Ex. user@domain.com):</label>
-                <input type="email" id="email-addr" name="email" required/>
+                <input type="email" id="email-addr" name="email" required>
             </fieldset>
-        </form>
+        </form><br>
 
         <form id="contact-method">
             <fieldset form="contact-method">
             <legend>How would you like to be contacted?</legend>
-            <input type="radio" id="Email" name="How would you like to be contacted?" value="Email"/>
+            <input type="radio" id="Email" name="How would you like to be contacted?" value="Email" required>
             <label for="Email">Email</label>
 
-            <input type="radio" id="Phone number"/>
+            <input type="radio" id="phone-num" name="Phone number">
+            <label for="phone-num">Phone Number</label>
+
+            <!--This is a date input. It automatically comes with a
+            date calendar and you can pick out the date required.-->
+
+            <label for="birthday">Select your birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
             </fieldset>
+        </form><br>
+
+        <form>
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="10" cols="50" placeholder="Type your message here..."></textarea><br>
+            <button type="submit">Submit</button>
         </form>
     </footer>
-
 </body>
 </html>
